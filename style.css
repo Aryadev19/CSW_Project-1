@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Fredoka+One&family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+html {
+  max-width: 100%;
+  overflow-x: hidden;;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar{
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: #49b8a6;
+}
+
+
+#main {
+  background: linear-gradient(-45deg, #d57b05, #5e18cf, #6548e9, #0ce929);
+  background-size: 400% 400%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+  position: relative;
+  font-family: 'Bree Serif', serif;
+  animation: gradient 10s ease infinite;
+}
+
+.player {
+  position: absolute;
+  top: 6rem;
+}
+
+.welcome {
+  position: absolute;
+  top:0;
+  font-weight: 900;
+  font-size: 65px;
+  animation: fadeInAnimation ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.welcometext {
+  position: absolute;
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  color: lightsalmon;
+  top: 20rem;
+}
+
+.ContainerH3{
+    font-family: 'Bree Serif', serif;
+    color: yellow;
+}
+
+h3{
+    font-family: 'Kalam', cursive;
+    color: white;
+}
+
+.container {
+  position: absolute;
+  top: 35rem;
+  height: 35vh;
+  width: 80vw;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 500ms ease-in;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 400ms ease-in;
+}
+
+.box:hover{
+  transform: rotateZ(10deg);
+}
+
+pre {
+  font-size: 13px;
+  margin-right: 7.5rem;
+  font-weight: 800;
+}
+.lang{
+    position: absolute;
+    top: 1.5rem;
+    display: block;
+}
+.cover {
+  color: rgb(100, 100, 8);
+}
+.msg {
+  color: rgb(41, 59, 4);
+}
+
+.hoverbox {
+  background: rgba(163, 205, 164, 0.21);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+}
+
+#vectorBox{
+    /* background: url("https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+    background-size: cover; */
+    background-color: #2C394B;
+    height: 120vh;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.vector{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  width: 100vw;
+  height: 300px;
+}
+
+.vectortxt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position:relative;
+  font-family: 'Kanit', sans-serif;
+  color: azure;
+  margin-right: 10rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
